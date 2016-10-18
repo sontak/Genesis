@@ -1,0 +1,5 @@
+Bin/
+*.opensdf
+*.sdf
+*.suo
+application.log
