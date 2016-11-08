@@ -21,7 +21,7 @@ namespace Genesis
 
 		void Run();
 
-	private:
+	protected:
 		Graphics::Window window_;
 
 	};

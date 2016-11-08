@@ -25,6 +25,8 @@ namespace Genesis
 			bool Update();
 			void Swap();
 
+			GLFWwindow * GetRawWindow();
+
 		private:
 			const int kOpenGLMajor = 3;
 			const int kOpenGLMinor = 2;

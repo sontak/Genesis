@@ -4,6 +4,7 @@
 
 #include <GLM\glm.hpp>
 
+#include "Input\InputManager.h"
 #include "Core\Application.h"
 #include "Graphics\Shader.h"
 
@@ -25,6 +26,8 @@ namespace Genesis
 			const std::string kLogTag = "Test";
 			const std::string kVertexShader = "default.vs";
 			const std::string kFragmentShader = "default.fs";
+
+			Input::InputManager * input_;
 
 			Graphics::Shader shader_;
 

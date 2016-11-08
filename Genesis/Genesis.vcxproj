@@ -14,6 +14,9 @@
     <ClInclude Include="Include\Core\Application.h" />
     <ClInclude Include="Include\Graphics\Shader.h" />
     <ClInclude Include="Include\Graphics\Window.h" />
+    <ClInclude Include="Include\Input\InputManager.h" />
+    <ClInclude Include="Include\Input\Keyboard.h" />
+    <ClInclude Include="Include\Input\Mouse.h" />
     <ClInclude Include="Include\Utility\Log.h" />
     <ClInclude Include="Include\Utility\Profiler.h" />
     <ClInclude Include="Include\Utility\Timer.h" />
@@ -22,6 +25,9 @@
     <ClCompile Include="Source\Core\Application.cpp" />
     <ClCompile Include="Source\Graphics\Shader.cpp" />
     <ClCompile Include="Source\Graphics\Window.cpp" />
+    <ClCompile Include="Source\Input\InputManager.cpp" />
+    <ClCompile Include="Source\Input\Keyboard.cpp" />
+    <ClCompile Include="Source\Input\Mouse.cpp" />
     <ClCompile Include="Source\Utility\Timer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

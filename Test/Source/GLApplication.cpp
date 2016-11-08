@@ -21,6 +21,8 @@ namespace Genesis
 
 		bool GLApplication::Initialize()
 		{
+			input_ = new Input::InputManager(window_);
+
 			GLuint arrayBuffer;
 			glGenVertexArrays(1, &arrayBuffer);
 			glBindVertexArray(arrayBuffer);
@@ -57,6 +59,13 @@ namespace Genesis
 
 		bool GLApplication::Update()
 		{
+			const Input::Keyboard & keyboard = input_->GetKeyboard();
+
+			if(keyboard.GetKeyState(GLFW_KEY_ESCAPE) == Input::Keyboard::Down)
+			{
+				return false;
+			}
+
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 			glUseProgram(shader_.GetId());
 

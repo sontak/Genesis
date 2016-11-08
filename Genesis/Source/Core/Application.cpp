@@ -11,7 +11,9 @@ namespace Genesis
 
 		while(window_.Update())
 		{
-			this->Update();
+			if(!this->Update())
+				break;
+
 			window_.Swap();
 		}
 
